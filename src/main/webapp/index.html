@@ -1,0 +1,40 @@
+<lift:surround with="default" at="content">
+<head>
+  <!-- required plugins -->
+  <!-- <script type="text/javascript" src="/scripts/date.js"></script> -->
+  <!--[if IE]><script type="text/javascript" src="/scripts/jquery.bgiframe.js"></script><![endif]-->
+  <!-- <link rel="stylesheet" type="text/css" href="/style/datePicker.css" /> -->
+
+  <link rel="stylesheet" type="text/css" href="/style/ui.all.css" />
+  <link rel="stylesheet" type="text/css" href="/style/ui.datepicker.css" />
+
+  <!-- jquery.datePicker.js -->
+  <!-- <script type="text/javascript" src="/scripts/jquery.datePicker.js"></script> -->
+  <script type="text/javascript" src="/scripts/jquery-ui.min.js"></script>
+
+  
+  <style>
+  a.dp-choose-date {
+	  float: left;
+	  width: 16px;
+	  height: 16px;
+	  padding: 0;
+	  margin: 5px 3px 0;
+	  display: block;
+	  text-indent: -2000px;
+	  overflow: hidden;
+	  background: url(/scripts/calendar.png) no-repeat; 
+  }
+  a.dp-choose-date.dp-disabled {
+    background-position: 0 -20px;
+	  cursor: default;
+  }
+  input.dp-applied {
+	  width: 140px;
+	  float: left;
+  }
+  </style>
+</head>
+   
+</lift:surround>
+

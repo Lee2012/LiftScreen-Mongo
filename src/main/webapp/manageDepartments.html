@@ -1,0 +1,45 @@
+<lift:surround with="default" at="content">
+  <div class="column span-19 last">
+    <h3>Department List</h3>
+    <div id="entryform">
+      <table>
+        <tr>
+	        
+			<th>City</th>
+			<th>State</th>
+			<th>Specialty</th>
+	        <th>Actions</th>
+        </tr>
+        <lift:DepartmentAccess.manageDepartments>
+        <department:entry>
+	      <tr>
+	        
+			<td><dpt:city /></td>
+			<td><dpt:state /></td>
+			<td><dpt:specialty /></td>
+			
+	        <td><dpt:actions /></td>
+	      </tr>
+        </department:entry>
+        </lift:DepartmentAccess.manageDepartments>
+      </table>
+     </div>
+  <!--   <br />   it is like the space-->
+<hr/>
+ 
+ <div class="column span-19 last">
+ <hr class="space" />
+ 
+  <div class="column span-4">
+   		<lift:DepartmentAccess.create >
+    		<department:create />
+    	</lift:DepartmentAccess.create>   
+   </div>
+  
+   
+ </div>
+
+
+
+  </div>
+</lift:surround>
